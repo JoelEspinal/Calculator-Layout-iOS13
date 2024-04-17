@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var displayLabel: UILabel!
+    var isFinnishedTypingNumer: Bool = true
     
+    @IBOutlet weak var displayLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,20 +22,22 @@ class ViewController: UIViewController {
 
     
     @IBAction func calcButtonPressed(_ sender: UIButton) {
+        isFinnishedTypingNumer = true
+        print("AAA")
     }
+    
+    //
     
     
     @IBAction func numButtonPressed(_ sender: UIButton) {
-        if let numValue = sender.currentTitle, var displayText = displayLabel.text {
-            if displayText != "0" {
-                displayText = displayText + "\(numValue)"
-            } else {
-                displayText = numValue
+       
+            if let numValue = sender.currentTitle {
+                if isFinnishedTypingNumer {
+                    displayLabel.text = numValue
+                    isFinnishedTypingNumer = false
+                } else {
+                    displayLabel.text = displayLabel.text! + numValue
+                }
             }
-            
-            displayLabel.text = displayText
-        }
     }
-    
 }
-
