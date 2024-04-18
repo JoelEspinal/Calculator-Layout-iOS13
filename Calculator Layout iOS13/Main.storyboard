@@ -97,7 +97,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="MIl-T7-UaY"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="pAF-XL-rIF"/>
                                                 </connections>
                                             </button>
@@ -109,7 +108,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="u74-db-X9k"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="22b-s0-wnF"/>
                                                 </connections>
                                             </button>
@@ -121,7 +119,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="EqF-4E-ENX"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="31S-i2-as5"/>
                                                 </connections>
                                             </button>
@@ -149,7 +146,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="ogs-bc-rsg"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="ii3-8k-Nq7"/>
                                                 </connections>
                                             </button>
@@ -161,7 +157,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="kgP-53-ePs"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="bFa-7W-H1W"/>
                                                 </connections>
                                             </button>
@@ -173,7 +168,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="e4A-C3-WbB"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="OdD-5g-Hk2"/>
                                                 </connections>
                                             </button>
@@ -201,7 +195,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="jdd-Ww-UaM"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="q50-lc-172"/>
                                                 </connections>
                                             </button>
@@ -213,7 +206,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="izW-I6-NZ9"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="uny-cM-eZ6"/>
                                                 </connections>
                                             </button>
@@ -225,7 +217,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="1Oa-W8-1qu"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="TE3-Kn-l5L"/>
                                                 </connections>
                                             </button>
@@ -253,7 +244,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="calcButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="BZy-w2-EYS"/>
                                                     <action selector="numButtonPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="pkO-TI-Hob"/>
                                                 </connections>
                                             </button>

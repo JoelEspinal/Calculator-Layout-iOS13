@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var isFinnishedTypingNumer: Bool = true
+    private var isFinnishedTypingNumer: Bool = false
     
     @IBOutlet weak var displayLabel: UILabel!
 
@@ -23,21 +23,37 @@ class ViewController: UIViewController {
     
     @IBAction func calcButtonPressed(_ sender: UIButton) {
         isFinnishedTypingNumer = true
-        print("AAA")
     }
     
-    //
-    
-    
     @IBAction func numButtonPressed(_ sender: UIButton) {
-       
-            if let numValue = sender.currentTitle {
-                if isFinnishedTypingNumer {
-                    displayLabel.text = numValue
-                    isFinnishedTypingNumer = false
-                } else {
-                    displayLabel.text = displayLabel.text! + numValue
-                }
+        
+        if let numbValue = sender.currentTitle {
+            if isFinnishedTypingNumer {
+                displayLabel.text = numbValue
+                isFinnishedTypingNumer = false
+            } else {
+                displayLabel.text = displayLabel.text! + numbValue
             }
+        }
+        
+//        if let displayText = displayLabel.text {
+//            if let numValue = sender.currentTitle {
+//                if isFinnishedTypingNumer {
+//                    if displayLabel.text == "0" {
+//                        displayLabel.text = "\(numValue)"
+//                    } else {
+//                        displayLabel.text = displayLabel.text! + numValue
+//                    }
+//                    
+//                    isFinnishedTypingNumer = false
+//                } else {
+//                    print("hello hello")
+//                    displayLabel.text = numValue
+//                }
+//            
+//            }
+//        }
+        
+        
     }
 }
