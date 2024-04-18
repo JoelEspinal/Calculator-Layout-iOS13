@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         }
          
         if let calcMethod = sender.currentTitle {
-            if calcMethod == "=/-" {
+            if calcMethod == "+/-" {
                 displayLabel.text = String(number * -1)
             }
         }
