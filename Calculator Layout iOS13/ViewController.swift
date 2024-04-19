@@ -30,7 +30,12 @@ class ViewController: UIViewController {
          
         if let calcMethod = sender.currentTitle {
             if calcMethod == "+/-" {
-                displayLabel.text = String(number * -1)
+                if displayLabel.text == "0" || displayLabel.text == "0." || displayLabel.text == "0.0"{
+                    
+                } else {
+                    displayLabel.text = String(number * -1)
+                }
+                
             } else if calcMethod == "%" {
                 displayLabel.text = String(number / 100)
             } else if calcMethod == "AC" {
@@ -46,7 +51,35 @@ class ViewController: UIViewController {
                 displayLabel.text = numbValue
                 isFinnishedTypingNumer = false
             } else {
-                displayLabel.text = displayLabel.text! + numbValue
+                if numbValue == "." {
+                    if displayLabel.text!.contains(".") &&  numbValue == "." {
+                       return
+                   }
+                    
+                    
+                    guard let currentDisplayValue = Double(displayLabel.text!) else {
+                        fatalError("Cannot convert display label text to a Doble!")
+                    }
+
+                    let isInt = floor(currentDisplayValue) == currentDisplayValue
+                    
+                    if !isInt {
+                        return
+                    }
+                }
+            
+                if displayLabel.text == "0" && numbValue == "0" {
+                    displayLabel.text = "0"
+                }
+                
+                else if displayLabel.text == "0" && numbValue == "." {
+                    displayLabel.text = "0."
+                }
+                
+                else {
+                    displayLabel.text = displayLabel.text! + numbValue
+                }
+            
             }
         }
         
