@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
     private var isFinnishedTypingNumer: Bool = false
+    
     
     private var displayValue: Double {
         get {
@@ -39,18 +42,13 @@ class ViewController: UIViewController {
         isFinnishedTypingNumer = true
       
         if let calcMethod = sender.currentTitle {
-            if calcMethod == "+/-" {
-                if displayLabel.text == "0" || displayLabel.text == "0." || displayLabel.text == "0.0"{
-                    displayValue = 0
-                } else {
-                    displayValue *= -1
-                }
-                
-            } else if calcMethod == "%" {
-                displayValue *= 0.01
-            } else if calcMethod == "AC" {
-                displayValue = 0
+            let calculator = CalculatorLogic(number: displayValue)
+            
+            guard let result = calculator.calculate(calcMethod) else {
+                fatalError("The result of the calculation is nil")
             }
+            
+            displayValue = result
         }
     }
     
@@ -110,3 +108,4 @@ class ViewController: UIViewController {
         
     }
 }
+
