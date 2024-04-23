@@ -37,7 +37,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
     var calculator = CalculatorLogic()
     @IBAction func calcButtonPressed(_ sender: UIButton) {
         isFinnishedTypingNumer = true
@@ -46,11 +45,9 @@ class ViewController: UIViewController {
         
         if let calcMethod = sender.currentTitle {
             
-            guard let result = calculator.calculate(calcMethod) else {
-                fatalError("The result of the calculation is nil")
+            if let result = calculator.calculate(calcMethod) {
+                self.displayValue = result
             }
-            
-            displayValue = result
         }
     }
     
